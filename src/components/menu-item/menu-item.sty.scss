@@ -7,9 +7,10 @@
   justify-content: center;
   border: 1px solid black;
   margin: 0 7.5px 15px;
+  border-radius: 5px;
   overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px #777;
+
+  box-shadow: 0 5px 20px rgba(119, 119, 119, 0.699);
 
   &:hover {
     cursor: pointer;
