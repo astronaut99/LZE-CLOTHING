@@ -11,6 +11,8 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(119, 119, 119, 0.699);
   }
 
   .collection-footer {
@@ -18,7 +20,8 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 
     .name {
       width: 90%;
