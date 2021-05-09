@@ -1,5 +1,8 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button.com';
+
+import {signInWithGoogle} from '../../firebase/firebase.utils'
+
 import FormInput from '../form-input/form-input.com';
 import './sign-in.sty.scss';
 
@@ -33,11 +36,14 @@ handleChange = event => {
                     <FormInput label='Email' handleChange={this.handleChange}  name='email' type='email' value={this.state.email} required  />
                     <FormInput label='Password' handleChange={this.handleChange} name='password' value={this.state.password} type='password' required  />
                 </form>
-
+                <div className='buttons' >
                 <CustomButton type='submit'>
                     Sign In
                 </CustomButton>
-
+                <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+                    Sign In With Google
+                </CustomButton>
+                </div>
             </div>
         )
     }
