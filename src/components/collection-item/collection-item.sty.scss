@@ -1,10 +1,14 @@
 .collection-item {
-  width: 22%;
-  display: flex;
+  width: 22vw;
+  display: inline-block;
   flex-direction: column;
   height: 350px;
   align-items: center;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 
   .image {
     width: 100%;
@@ -17,7 +21,7 @@
   }
 
   .custom-button {
-    width: 80%;
+    width: 100%;
     opacity: 0.7;
     position: absolute;
     top: 255px;
